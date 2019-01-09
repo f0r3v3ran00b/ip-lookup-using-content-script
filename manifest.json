@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "IP Lookup using content scripts",
+  "Description": "IP Lookup using content scripts",
+  "author": "f0r3v3ran00b",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icons8-german-hat-16.png"
+  },
+  "icons": {
+    "16": "icons8-german-hat-16.png",
+    "48": "icons8-german-hat-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.newscientist.com/"
+      ],
+      "js": ["jquery.js", "content.js"]
+    }
+  ]
+}
